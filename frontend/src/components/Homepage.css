@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbarcont{
+  display: flex;
+}
+
+.name {
+  font-size: 2rem; /* Adjust the font size according to your preference */
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Set the color of the text */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+  margin-left:40px;
+  margin-top: 5px;
+}
+
+.name > a{
+  text-decoration: none;
+  color: rgb(84, 68, 68);
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center posts horizontally */
+    align-items: center; /* Align posts to the top vertically */
+    gap: 20px;
+    padding: 20px; /* Add padding to create space around the posts */
+  }
+  
+  .post {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+    transition: transform 0.2s ease;
+    text-align: center;
+    cursor: default;
+  }
+  
+  .post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .post p {
+    margin-bottom: 0;
+    color: #666;
+    
+  }
+  
+ .dfl {
+    margin-top: 20px;
+  } 
+  
+  .jcc {
+    justify-content: center;
+  }
+  
+  .tac {
+    text-align: center;
+  }
+  
+  .f20 {
+    font-size: 20px;
+  }

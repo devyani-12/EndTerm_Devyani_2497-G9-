@@ -1,0 +1,14 @@
+
+
+.editcontainer{
+    width: 100%;
+}
+
+.editbox{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+}

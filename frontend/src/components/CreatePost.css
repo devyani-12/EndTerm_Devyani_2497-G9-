@@ -1,0 +1,68 @@
+/* CreatePost.css */
+
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Ensure no scrolling on the entire page */
+  }
+  
+  /* Ensure all elements inherit box-sizing */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Apply styles to the post container */
+  .post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content:start; /* Align posts to the top vertically */
+    height: 100vh; /* Set container height to fill the viewport */
+    overflow: hidden; /* Disable scrolling */
+    position: relative; /* Ensure position relative for nested elements */
+  }
+  
+  /* Styles for the form container */
+  .form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; /* Adjust margin from top as needed */
+  }
+  
+  /* Additional form styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
