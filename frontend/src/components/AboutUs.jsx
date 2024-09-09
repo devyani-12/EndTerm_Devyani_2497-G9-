@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
-import TrendEliteVideo from "./video/TrendElite.mp4";
+// import TrendEliteVideo from "./video/TrendElite.mp4";
 
 const AboutUs = () => {
             const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -15,10 +15,10 @@ const AboutUs = () => {
             <center><h2>About Us</h2></center>
             <div className="video-container">
                 <center>
-                    <video height="550" width="80%" controls>
+{/*                     <video height="550" width="80%" controls>
                         Your browser does not support the video tag.
                         <source src={TrendEliteVideo} type="video/mp4" />{" "}
-                    </video>
+                    </video> */}
                 </center>
             </div>
         </div>
