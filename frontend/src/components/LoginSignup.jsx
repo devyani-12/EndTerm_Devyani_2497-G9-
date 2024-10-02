@@ -28,7 +28,7 @@ const LoginSignup = ({login}) => {
 
         if (isLogin) {
             // Login logic
-            axios.post('http://localhost:5000/api/auth/login', formData)
+            axios.post('https://trendelite.onrender.com/api/auth/login', formData)
                 .then(res => {
                     localStorage.setItem('token', res.data.token);
                     localStorage.setItem('userId', res.data.userId);
@@ -40,7 +40,7 @@ const LoginSignup = ({login}) => {
                 });
         } else {
             // Signup logic
-            axios.post('http://localhost:5000/api/auth/register', formData)
+            axios.post('https://trendelite.onrender.com/api/auth/register', formData)
                 .then(res => {
                     // localStorage.setItem('token', res.data.token);
                     // localStorage.setItem('userId', res.data.userId);                                                                                                             

@@ -17,7 +17,7 @@ const CreatePost = () => {
             const token = localStorage.getItem('token');
             if (token) {
                 try {
-                    await axios.get('http://localhost:5000/api/validate', {
+                    await axios.get('https://trendelite.onrender.com/api/validate', {
                         headers: {
                             'Authorization': `Bearer ${token}` // Include token in request headers
                         }
@@ -57,7 +57,7 @@ const CreatePost = () => {
         }
 
         try {
-            await axios.post('http://localhost:5000/api/posts', formData, {
+            await axios.post('https://trendelite.onrender.com/api/posts', formData, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }

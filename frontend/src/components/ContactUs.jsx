@@ -26,7 +26,7 @@ const ContactUs = () => {
 
     const handleSubmit = () => {
         setIsSubmitting(true);
-        axios.post('http://localhost:5000/api/contact', formData)
+        axios.post('https://trendelite.onrender.com/api/contact', formData)
             .then(res => {
                 setIsSubmitting(false);
                 setIsSuccess(true);

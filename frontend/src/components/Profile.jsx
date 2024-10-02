@@ -17,7 +17,7 @@ const Profile = () => {
             const token = localStorage.getItem('token');
             if (token) {
                 try {
-                    await axios.get('http://localhost:5000/api/validate', {
+                    await axios.get('https://trendelite.onrender.com/api/validate', {
                         headers: {
                             'Authorization': `Bearer ${token}` // Include token in request headers
                         }
@@ -40,7 +40,7 @@ const Profile = () => {
 
         checkToken();
 
-        axios.get('http://localhost:5000/api/posts', {
+        axios.get('https://trendelite.onrender.com/api/posts', {
             headers: {
                 Authorization: `Bearer ${token}`, // Include token in request headers
             },
@@ -68,7 +68,7 @@ const Profile = () => {
     };
 
     const handleDelete = (postId) => {
-        axios.delete(`http://localhost:5000/api/posts/${postId}`, {
+        axios.delete(`https://trendelite.onrender.com/api/posts/${postId}`, {
             headers: {
                 Authorization: `Bearer ${token}`, // Include token in request headers
             },

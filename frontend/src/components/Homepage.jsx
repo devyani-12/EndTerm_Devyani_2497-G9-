@@ -16,7 +16,7 @@ const Homepage = () => {
             setIsLoggedIn(true);
 
             // Fetch posts only if token exists
-            axios.get('http://localhost:5000/api/posts', {
+            axios.get('https://trendelite.onrender.com/api/posts', {
                 headers: {
                     'Authorization': `Bearer ${token}` // Include token in request headers
                 }

@@ -19,7 +19,7 @@ const EditPost = () => {
        
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/api/posts/${postId}` , {
+        axios.get(`https://trendelite.onrender.com/api/posts/${postId}` , {
             headers: {
                 'Authorization': `Bearer ${token}` // Include token in request headers
             }
@@ -32,7 +32,7 @@ const EditPost = () => {
     }, [postId]);
 
     const handleSubmit = () => {
-        axios.put(`http://localhost:5000/api/posts/${postId}`, { title, content } , {
+        axios.put(`https://trendelite.onrender.com/api/posts/${postId}`, { title, content } , {
             headers: {
                 'Authorization': `Bearer ${token}` // Include token in request headers
             }
