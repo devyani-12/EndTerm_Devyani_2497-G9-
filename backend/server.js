@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 const authenticateUser = require('./routes/authMiddleware');
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://devyani:mongodbdevyani>@cluster0.4pjyj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then(() => console.log('MongoDB connected'))
+mongoose.connect('mongodb+srv://devyani:mongodbdevyani@cluster0.4pjyj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
 // Routes
